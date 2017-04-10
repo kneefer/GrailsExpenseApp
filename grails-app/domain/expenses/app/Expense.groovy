@@ -13,6 +13,6 @@ class Expense {
     }
 
     String toString() {
-        return this.amount + " " + this.currency + "(" + this.description + ")";
+        return this.amount + " " + this.currency + " (" + this.description + ")";
     }
 }

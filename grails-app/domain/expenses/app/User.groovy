@@ -15,6 +15,6 @@ class User {
     }
 
     String toString() {
-        return this.firstName + " " + this.lastName + "(" + this.email + ")"
+        return this.firstName + " " + this.lastName + " (" + this.email + ")"
     }
 }
