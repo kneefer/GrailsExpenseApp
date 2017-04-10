@@ -3,7 +3,7 @@
     <head>
         <meta name="layout" content="main" />
         <g:set var="entityName" value="${message(code: 'expense.label', default: 'Expense')}" />
-        <title><g:message code="default.list.label" args="[entityName]" /></title>
+        <title>Expenses</title>
     </head>
     <body>
         <g:if test="${flash.message}">
