@@ -36,5 +36,6 @@
 <div class="container">
     <g:layoutBody/>
 </div>
+<footer class="text-center">by Szymon Bartnik (OS2)</footer>
 </body>
 </html>

@@ -10,7 +10,7 @@
             <div class="alert alert-success" role="status">${flash.message}</div>
         </g:if>
         <div class="btn-group" role="group" aria-label="...">
-            <g:link class="btn btn-primary" action="index"> List of categories</g:link>
+            <g:link class="btn btn-primary" action="index">List of categories</g:link>
             <g:link class="btn btn-primary" action="create">Create new category</g:link>
         </div>
         <div id="edit-category" class="content scaffold-edit" role="main">
