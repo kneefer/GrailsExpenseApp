@@ -6,19 +6,17 @@
         <title><g:message code="default.list.label" args="[entityName]" /></title>
     </head>
     <body>
-        <a href="#list-expense" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-        <div class="nav" role="navigation">
-            <ul>
-                <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-                <li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
-            </ul>
+        <g:if test="${flash.message}">
+            <div class="alert alert-success" role="status">${flash.message}</div>
+        </g:if>
+        <div class="btn-group" role="group" aria-label="...">
+            <g:link class="create" action="create">
+                <button class="btn btn-primary">Create new expense</button>
+            </g:link>
         </div>
         <div id="list-expense" class="content scaffold-list" role="main">
-            <h1><g:message code="default.list.label" args="[entityName]" /></h1>
-            <g:if test="${flash.message}">
-                <div class="message" role="status">${flash.message}</div>
-            </g:if>
-            <f:table collection="${expenseList}" />
+            <h1>Expenses</h1>
+            <f:table displayStyle="" collection="${expenseList}" />
 
             <div class="pagination">
                 <g:paginate total="${expenseCount ?: 0}" />
