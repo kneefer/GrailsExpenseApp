@@ -11,4 +11,8 @@ class Expense {
         amount(blank: false)
         currency(blank: false, size: 3..3)
     }
+
+    String toString() {
+        return this.amount + " " + this.currency + "(" + this.description + ")";
+    }
 }

@@ -7,4 +7,8 @@ class Category {
     static constraints = {
         name(blank: false, size: 1..20)
     }
+
+    String toString() {
+        return this.name;
+    }
 }
